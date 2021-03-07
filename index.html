@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<meta name="description" content="Nama saya adalah M Teguh, saya adalah seorang web programmer."/>
+		<meta property="og:url" content=""/>
+		<meta property="og:title" content="M Teguh"/>
+		<meta property="og:description" content="Nama saya adalah M Teguh, saya adalah seorang web programmer."/>
+		<meta property="og:image" content="assets/gambar/logo.png"/>
+		<title>M Teguh</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/brands.min.js"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>
+		<link rel="icon" type="image/png" href="assets/gambar/logo.png"/>
+		<style>
+			html,
+			body{
+				height: 100%;
+				}
+			body{
+				background-color: #fff;
+				text-align: center;
+				width: 100%;
+				margin:0;
+				padding:0;
+				}
+			a{
+				display: inline-block;
+				}
+			.btn{
+				text-decoration: none;
+				margin: 10px 0;
+				padding: 0.4em 1.5em;
+				border-style: solid;
+				transition: background-color 2s;
+				}
+			.btn-dark{
+				color: #000;
+				}
+			.btn-dark:hover{
+				background-color: #000;
+				color: #fff;
+				border-color: #000;
+				}
+			.btn-light{
+				color: #fff;
+				}
+			.btn-light:hover{
+				background-color: #fff;
+				color: #000;
+				border-color: #fff;
+				}
+			.link-light{
+				color: #fff;
+				text-decoration: none;
+				}
+			.link-light:hover{
+				color: #ddd;
+				text-decoration: underline;
+				}
+			.container{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				overflow: auto;
+				}
+			.footer{
+				background-color: #000;
+				color: #999;
+				text-align: right;
+				padding: 20px;
+				}
+			.hi95{
+				height: 95%;
+				}
+			.p5{
+				padding: 5%;
+				}
+			.py10{
+				padding: 10% 0;
+				}
+			.bg1,
+			.bg2{
+				background-color: #000;
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				color: #fff;
+				}
+			.bg1{
+				background-image: url("assets/gambar/latar1.jpg");
+				}
+			.bg2{
+				background-image: url("assets/gambar/latar2.jpg");
+				}
+			.blur{
+				-webkit-backdrop-filter: blur(3px);
+				backdrop-filter: blur(3px);
+				}
+			.sosmed{
+				padding: 30px;
+				background-color: #222;
+				color: #fff;
+				}
+			.mx-10{
+				margin: 0 10px;
+				}
+			@media only screen and (min-width: 768px){
+				.container{
+					flex-direction: row-reverse;
+					}
+				.kiri{
+					text-align: left;
+					}
+				.kanan{
+					text-align: right;
+					}
+				.mx-auto{
+					margin: 0 auto;
+					}
+				}
+			@keyframes muncul{
+				0% {transform: translate(-100%,100%);}
+				50% {transform: scale(0.1,0.1);}
+				}
+			.a-muncul{
+				animation-name: muncul;
+				animation-duration: 5s;
+				}
+		</style>
+	</head>
+	<body>
+		<div class="container hi95 bg1">
+			<div class="kanan a-muncul">
+				<h1>M Teguh</h1>
+				<p>
+					Ingin lebih dekat dengan saya?
+					Ikuti sekarang juga..<br>
+					<a href="https://instagram.com/ttgguh" class="btn btn-light"><i class="fab fa-instagram fa-lg"></i> ttgguh</a>
+				</p>
+			</div>
+		</div>
+		<div class="container hi95 bg2">
+			<div class="kiri p5 blur">
+				<h2>Web Programmer</h2>
+				<p>
+				Saya adalah seorang web programmer, melayani pembuatan berbagai macam website seperti toko online, blog dan web profile.
+				</p>
+			</div>
+		</div>
+		<div class="container py10">
+			<div class="kiri mx-auto">
+				<h2>Hubungi Saya</h2>
+				<p>
+					Anda butuh website? Hubungi saya sekarang juga..
+				</p>
+			</div>
+			<div class="mx-auto">
+				<a href="https://t.me/ttgguh" class="btn btn-dark"><i class="fab fa-telegram fa-lg"></i> Buat Pesanan</a>
+			</div>
+		</div>
+		<div class="sosmed">
+			<h2>Temukan Saya</h2>
+			<a href="https://facebook.com/m.teguhapplep" class="link-light mx-10"> <i class="fab fa-facebook fa-3x"></i> </a>
+			<a href="https://t.me/ttgguh" class="link-light mx-10"> <i class="fab fa-telegram fa-3x"></i> </a>
+			<a href="https://github.com/mteguhpro" class="link-light mx-10"> <i class="fab fa-github fa-3x"></i> </a>
+		</div>
+		<div class="footer">
+			<span id="tahun">2019</span> &copy; M Teguh
+		</div>
+		<script>
+			var tanggal = new Date();
+			document.getElementById('tahun').innerHTML = tanggal.getFullYear();
+		</script>
+	</body>
+</html>
